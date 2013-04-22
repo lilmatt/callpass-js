@@ -2,14 +2,18 @@
 <head>
 <script type="text/javascript">
 function getPass(callsign) {
+    // normalize to caps
     callsign = callsign.toUpperCase();
-    var hash = 0x73e2;
+
+    // remove trailing SSIDs
     var dashLocation = callsign.indexOf('-');
     if (dashLocation > 1) {
         callsign = callsign.slice(0, dashLocation);
     }
+
     var bytes = callsign.split('');
     var one, two;
+    var hash = 0x73e2; // seed value -- can't change
     while (bytes.length) {
         one = bytes.shift();
         two = bytes.shift();
@@ -18,6 +22,7 @@ function getPass(callsign) {
             hash = (hash ^ two.charCodeAt(0));
         }
     }
+    // don't be negative
     var result = (hash & 0x7fff);
     alert(result);
   }
