@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function getPass(callsign) {
+    callsign = callsign.toUpperCase();
+    var hash = 0x73e2;
+    var dashLocation = callsign.indexOf('-');
+    if (dashLocation > 1) {
+        callsign = callsign.slice(0, dashLocation);
+    }
+    var bytes = callsign.split('');
+    var one, two;
+    while (bytes.length) {
+        one = bytes.shift();
+        two = bytes.shift();
+        hash = (hash ^ one.charCodeAt(0)<<8);
+        if (two != undefined) {
+            hash = (hash ^ two.charCodeAt(0));
+        }
+    }
+    var result = (hash & 0x7fff);
+    alert(result);
+  }
+  </script>
+  <title></title>
+</head>
+<body onload="getPass('N2PYI-15');">
+</body>
+</html>
