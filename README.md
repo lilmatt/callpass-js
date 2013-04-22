@@ -1,6 +1,6 @@
-* APRS passcode generator, entirely in JS.
+# APRS passcode generator, entirely in JS.
 
-*** Manifesto
+## Manifesto/Justification
 
 The algorithm is a joke, does absolutely nothing to prevent non-hams from
 connecting to the APRS IS, and is freely available in various implementations
@@ -13,7 +13,7 @@ If you're upset that this software exists, then let's work on a better way to
 keep the APRS IS ham-only, rather than pretending the issue doesn't actually
 exist.
 
-*** Usage
+## Usage
 
 Change the callsign between the single quotes on the <body onLoad...> line,
 save, and open in a web browser.  The passcode will show up in an alert box.
