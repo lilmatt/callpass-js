@@ -1,4 +1,4 @@
-# APRS passcode generator, entirely in JS.
+# An APRS passcode generator, written entirely in JS.
 
 ## Manifesto/Justification
 
@@ -21,5 +21,7 @@ The passcode will show up in an alert box.
 
 This software does no checking of callsign validity whatsoever.  It _does_
 however strip any SSIDs (-1, -3, -7, etc.) from a callsign if one is entered.
+
+===========
 
 73 de N2PYI
