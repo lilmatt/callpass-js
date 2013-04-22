@@ -4,16 +4,16 @@
 
 ## Manifesto/Justification
 
-The currently passcode hashing algorithm is a joke.  It does absolutely nothing
+The current passcode hashing algorithm is a joke.  It does absolutely nothing
 to prevent non-hams from injecting items into the APRS IS, and is freely
-available in various implementations of open-source software, such as xastir. 
+available in various implementations of open-source software, such as xastir.
 
 I'm tired of having to go through gyrations to generate these for people when
 I help them set up APRSIS32, aprx, etc. so I wrote this.
 
 If you're upset that this software exists, then let's work on a better way to
-keep the APRS IS ham-only, rather than pretending the passcode does anything at
-all to keep non-hams off of the APRS IS.
+keep the APRS IS ham-only, rather than pretending the passcode does anything
+at all to keep non-hams off of the APRS IS.
 
 ## Usage
 
