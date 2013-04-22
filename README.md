@@ -15,11 +15,11 @@ exist.
 
 ## Usage
 
-Change the callsign between the single quotes on the <body onLoad...> line,
-save, and open in a web browser.  The passcode will show up in an alert box.
+Change the callsign between the single quotes on the
+<code>&lt;body onLoad...&gt;</code> line, save, and open in a web browser.
+The passcode will show up in an alert box.
 
 This software does no checking of callsign validity whatsoever.  It _does_
 however strip any SSIDs (-1, -3, -7, etc.) from a callsign if one is entered.
 
-73
-N2PYI
+73 de N2PYI
